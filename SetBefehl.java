@@ -7,8 +7,9 @@ public class SetBefehl {
     if (args[3].equals("x") || args[3].equals("o")) {
       
     } else {
-      System.out.println("Falsche Eingabe");  
-      } // end of if-else
+      System.out.println("Falsche Eingabe");
+      return;  
+    }
     CLIMain.BRETT.setFigur(Integer.parseInt(args[1]), Integer.parseInt(args[2]), args[3]);
   }
 }
